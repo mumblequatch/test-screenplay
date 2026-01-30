@@ -41,7 +41,14 @@
             margin-right: 1.4in;
             margin-bottom: 0.23in;
         }
+        .parenthetical {
+            margin-left: 1.9in;
+            margin-right: 1.9in;
+            margin-bottom: 0;
+        }
+        .character + .parenthetical { page-break-before: avoid; }
         .character + .dialogue { page-break-before: avoid; }
+        .parenthetical + .dialogue { margin-top: 0; page-break-before: avoid; }
         @media print {
             html { background: white; }
             body { margin: 0; max-width: none; }
@@ -58,13 +65,17 @@
                 margin-left: 0;
                 margin-right: 0;
             }
+            .parenthetical {
+                margin-left: 1em;
+                margin-right: 1em;
+            }
         }
     </style>
 </head>
 <body>
 <p class="scene-heading first">INT. COFFEE SHOP - DAY</p>
 <p class="character">SARAH</p>
-<p class="dialogue">(muttering)</p>
+<p class="parenthetical">(muttering)</p>
 <p class="dialogue">Why won't this code work?</p>
 <p class="character">BARISTA (O.S.)</p>
 <p class="dialogue">Your order is ready!</p>
