@@ -55,19 +55,32 @@
         }
         @media screen and (max-width: 700px) {
             body {
-                padding: 1em;
-                font-size: 16px;
+                padding: 1.5em;
+                font-size: 20px;
+                line-height: 1.5;
+            }
+            .scene-heading {
+                margin-bottom: 1em;
+            }
+            .scene-heading:not(.first) {
+                margin-top: 1.5em;
             }
             .character {
-                margin-left: 1.5em;
+                margin-left: 0;
+                text-align: center;
+                margin-top: 1.2em;
+                margin-bottom: 0.3em;
             }
             .dialogue {
                 margin-left: 0;
                 margin-right: 0;
+                margin-bottom: 1em;
             }
             .parenthetical {
-                margin-left: 1em;
-                margin-right: 1em;
+                margin-left: 2em;
+                margin-right: 2em;
+                text-align: center;
+                margin-bottom: 0.3em;
             }
         }
     </style>
