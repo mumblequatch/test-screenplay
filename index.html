@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test-screenplay</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        @page { size: 7.02in 9.74in; margin: 0.5in; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { background: #f5f6f6; }
+        body {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 14pt;
+            line-height: 1.4;
+            color: #424242;
+            background: #f5f6f6;
+            max-width: 7.02in;
+            margin: 0 auto;
+            padding: 0.5in;
+            min-height: 100vh;
+        }
+        .scene-heading {
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 0.23in;
+            page-break-after: avoid;
+        }
+        .scene-heading.first { margin-top: 0; }
+        .scene-heading:not(.first) { margin-top: 0.33in; }
+        .character {
+            text-transform: uppercase;
+            margin-left: 2.3in;
+            margin-bottom: 0;
+            page-break-after: avoid;
+        }
+        .dialogue {
+            margin-left: 1.4in;
+            margin-right: 1.4in;
+            margin-bottom: 0.23in;
+        }
+        .character + .dialogue { page-break-before: avoid; }
+        @media print {
+            html { background: white; }
+            body { margin: 0; max-width: none; }
+        }
+        @media screen and (max-width: 700px) {
+            body {
+                padding: 1em;
+                font-size: 16px;
+            }
+            .character {
+                margin-left: 1.5em;
+            }
+            .dialogue {
+                margin-left: 0;
+                margin-right: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+<p class="scene-heading first">INT. COFFEE SHOP - DAY</p>
+<p class="character">SARAH</p>
+<p class="dialogue">(muttering)</p>
+<p class="dialogue">Why won't this code work?</p>
+<p class="character">BARISTA (O.S.)</p>
+<p class="dialogue">Your order is ready!</p>
+<p class="character">SARAH</p>
+<p class="dialogue">Finally, some caffeine.</p>
+<p class="scene-heading">EXT. CITY STREET - NIGHT</p>
+<p class="character">MYSTERIOUS STRANGER</p>
+<p class="dialogue">Excuse me, do you know where the library is?</p>
+<p class="character">SARAH</p>
+<p class="dialogue">Two blocks that way.</p>
+<p class="character">MYSTERIOUS STRANGER</p>
+<p class="dialogue">Thanks.</p>
+<p class="scene-heading">INT. SARAH'S APARTMENT - LATER</p>
+<p class="character">SARAH</p>
+<p class="dialogue">Home sweet home.</p>
+
+</body>
+</html>
